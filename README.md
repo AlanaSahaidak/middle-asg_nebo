@@ -30,13 +30,6 @@ The setup creates a VPC, launch template, autoscaling group, dynamic scaling pol
 - **Scheduled Policies**: Time-based (cron-like). Difference: Proactive, overrides dynamic if conflicting.
 - **Simple vs. Step Scaling**: This uses simple (fixed adjustment); step would use percentage-based rules for more granular control.
 
-## Deployment Steps
-1. Install Terraform and AWS CLI.
-2. Configure AWS: `aws configure` (region: eu-central-1).
-3. Clone this repo.
-4. Run: `terraform init`, `terraform plan`, `terraform apply`.
-5. Verify in AWS Console: VPC, ASG, policies created.
-
 ## Testing Instructions
 1. Deploy the stack.
 2. SSH into instance: `ssh ec2-user@<public-ip>`.
